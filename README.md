@@ -129,9 +129,16 @@ This is the research question AgentIC is designed to answer: **what is the relat
 
 ---
 
+Why this is not just "ChatGPT for Verilog"
+Any LLM will generate plausible-looking Verilog from a text prompt. That code will typically fail simulation, contain width errors, have broken testbenches, and produce no physical layout. AgentIC's contribution is the verified path from text to silicon — the multi-gate quality pipeline, the self-healing repair architecture, and the benchmark that measures it rigorously. The LLM is replaceable. The pipeline is the research.
+
+- 0% end-to-end pass rate on the current model. This is reported honestly and in full.
+RTL is generated successfully for all 10 designs. Every failure is documented at stage level with logs. The benchmark framework itself — 10 standardized designs, automated evaluation, stage-by-stage reporting — is a contribution independent of the pass rate.
+A system that honestly measures its own failure is more scientifically valuable than a demo that hides it. The pass rate is a function of the model. The benchmark is a function of the architecture. Both are real.
+
 ## Contact
 
-Built by [Your Name] — Undergraduate, Lucknow University
-For collaboration, compute access, or research enquiries: [your email]
+Built by Vicky Nishad — Undergraduate, Lucknow University
+For collaboration, compute access, or research enquiries: contactme@buildstack.live
 
 *Full source code available to collaborators and researchers on request.*
